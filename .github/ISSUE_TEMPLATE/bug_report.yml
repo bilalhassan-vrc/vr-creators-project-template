@@ -1,0 +1,45 @@
+name: Bug report
+description: Report a reproducible problem. Do not include secrets or confidential information.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "For security vulnerabilities, do not use this form. Follow SECURITY.md and report privately. Never include client data, credentials, API keys, passwords, or confidential information."
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: A concise, factual description of the problem.
+      placeholder: Describe the observed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide minimal, sanitized steps.
+      placeholder: "1. ...\n2. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Relevant versions and platform; omit identifying or confidential data.
+      placeholder: "App version, OS, runtime/browser versions"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs or screenshots
+      description: Remove secrets, tokens, personal data, and client information before sharing.
+    validations:
+      required: false
